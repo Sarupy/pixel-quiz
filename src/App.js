@@ -1,6 +1,12 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+// import Blogs from "./pages/Blogs";
+// import Contact from "./pages/Contact";
+// import NoPage from "./pages/NoPage";
+import NavBar from './components/navBar';
+import './App.css';
 import { createTheme, ThemeProvider } from '@mui/material';
-
-// const simplifyChampionName = (name) => name.replaceAll(" ", "").replaceAll("'", "").replaceAll(".", "");
 
 const App = () => {
 
@@ -23,15 +29,16 @@ const App = () => {
   return (
     <>
     <ThemeProvider theme={theme}>
-      <h1>Oi</h1>
-    {/* <BrowserRouter>
+    <BrowserRouter>
     <Routes>
     <Route path="/" element={<NavBar />}>
           <Route index element={<Home />} />
-          
+          {/* <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>
-    </BrowserRouter> */}
+    </BrowserRouter>
     </ThemeProvider>
 
   </>
