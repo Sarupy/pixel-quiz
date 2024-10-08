@@ -14,25 +14,25 @@ const simplifyChampionName = (name) => name.replaceAll(" ", "").replaceAll("'", 
 
 const App = () => {
 
-  const theme = createTheme({
-    palette: {
-      mode: 'dark',
-      primary: {
-        main: '#ddd', // Defina sua cor primária aqui
-      },
-      secondary: {
-        main: '#00ccd4', // Você pode definir uma cor secundária também
-      },
-      background: {
-        default: '#aaa', // Cor de fundo padrão
-        paper: '#004A35', // Cor de fundo para componentes como Paper
-      },
-    },
-  });
+  // const theme = createTheme({
+  //   palette: {
+  //     mode: 'dark',
+  //     primary: {
+  //       main: '#ddd', // Defina sua cor primária aqui
+  //     },
+  //     secondary: {
+  //       main: '#00ccd4', // Você pode definir uma cor secundária também
+  //     },
+  //     background: {
+  //       default: '#aaa', // Cor de fundo padrão
+  //       paper: '#004A35', // Cor de fundo para componentes como Paper
+  //     },
+  //   },
+  // });
 
   return (
     <>
-    <ThemeProvider theme={theme}>
+    {/* <ThemeProvider theme={theme}> */}
       <h1>hello</h1>
     {/* <BrowserRouter>
     <Routes>
@@ -40,8 +40,8 @@ const App = () => {
           <Route index element={<Home />} /> 
         </Route>
       </Routes>
-    </BrowserRouter> */}
-    </ThemeProvider>
+    </BrowserRouter> 
+    </ThemeProvider>*/}
 
   </>
   );
